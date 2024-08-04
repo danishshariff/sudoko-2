@@ -119,3 +119,20 @@ button:hover {
     padding: 15px 30px;
 }
 
+.cell:nth-child(3n) {
+    border-right: 2px solid black;
+}
+
+.cell:nth-child(3n+1) {
+    border-left: 2px solid black;
+}
+
+.cell:nth-child(n+1):nth-child(-n+9) {
+    border-top: 2px solid black;
+}
+
+.cell:nth-child(n+19):nth-child(-n+27),
+.cell:nth-child(n+46):nth-child(-n+54),
+.cell:nth-child(n+73):nth-child(-n+81) {
+    border-bottom: 2px solid black;
+}
